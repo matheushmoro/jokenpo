@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jokenpo</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main class="container">
+        <h1>Jokenpo</h1>
+
+        <div class="buttons">
+            <button onclick="play('rock')" class="btn-jokenpo">
+                <img src="assets/pedra.png" alt="Rock" class="icon-jokenpo">
+            </button>
+            <button onclick="play('paper')" class="btn-jokenpo">
+                <img src="assets/papel.png" alt="Paper" class="icon-jokenpo">
+            </button>
+            <button onclick="play('scissors')" class="btn-jokenpo">
+                <img src="assets/tesoura.png" alt="Scissors" class="icon-jokenpo">
+            </button>
+        </div>
+        <p id="result"></p>
+        <div class="score-row">
+            <div class="score-block">
+                <div class="score-title">Você</div>
+                <div class="score-value" id="playerScore">0</div>
+            </div>
+            <div class="score-vs">VS</div>
+            <div class="score-block">
+                <div class="score-title">COM</div>
+                <div class="score-value" id="computerScore">0</div>
+            </div>
+        </div>
+    </main>
+</body>
+<script src="script.js"></script>
+</html>

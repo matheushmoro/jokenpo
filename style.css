@@ -1,0 +1,189 @@
+:root {
+	--bg-primary: #050806;
+	--bg-secondary: #0b1710;
+	--accent: #1f8f53;
+	--accent-soft: #36b06f;
+	--text-main: #e8f3ec;
+	--text-muted: #a6b8ad;
+	--border-soft: rgba(86, 138, 109, 0.25);
+}
+
+
+body {
+	min-height: 100vh;
+	margin: 0;
+	padding: 0;
+    background: radial-gradient(circle at 40% 40%, #103620 0%, var(--bg-primary) 45%),
+				linear-gradient(140deg, var(--bg-secondary) 0%, #040505 70%);
+	color: var(--text-main);
+	font-family: 'Segoe UI', Arial, sans-serif;
+	color: #eafef3;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center ;
+}
+
+.container {
+	background: linear-gradient(90deg, rgba(54, 176, 111, 0.12) 0%, #36b06f28 54%, rgba(54, 176, 111, 0.12) 100%);
+	border: 1px solid #12a853;
+	border-radius: 18px;
+	box-shadow: 0 4px 32px 0 rgba(0,0,0,0.25);
+	backdrop-filter: blur(8px);
+	width: 600px;
+    height: 500px;
+	margin: 60px auto 0 auto;
+	padding: 20px 28px 28px 28px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+    justify-content: center;
+}
+
+.container h1 {
+	font-family: 'Orbitron', 'Segoe UI', Arial, sans-serif;
+	font-size: 2.2rem;
+	font-weight: 700;
+	color: #ffffff;
+	margin-bottom: 28px;
+	text-shadow: 0 2px 12px #0f2b1e;
+}
+
+.buttons {
+    display: flex;
+    max-height: auto;
+    gap: 16px;
+    margin-bottom: 24px;
+}
+
+.btn-jokenpo {
+    height: 180px;
+	background: rgba(26, 255, 124, 0.10);
+	border: 2px solid #12a853;
+	border-radius: 12px;
+	cursor: pointer;
+	box-shadow: 0 2px 12px 0 rgba(26,255,124,0.10);
+	transition: background 0.2s, border 0.2s, color 0.2s, box-shadow 0.2s;
+}
+
+.icon-jokenpo {
+	height: 100%;
+    filter: drop-shadow(0 2px 8px #1aff7c44);
+}
+
+button:hover, button:focus {
+	background: rgba(26, 255, 124, 0.22);
+	border-color: #00ffae;
+	color: #00ffae;
+	box-shadow: 0 4px 24px 0 rgba(26,255,124,0.18);
+	outline: none;
+	transform: translateY(-6px);
+	transition: transform 0.18s cubic-bezier(.4,1.5,.5,1), background 0.2s, border 0.2s, color 0.2s, box-shadow 0.2s;
+}
+
+button:active, .btn-jokenpo:active {
+	background: rgba(26, 255, 124, 0.32);
+	border-color: #00ffae;
+	color: #00ffae;
+	box-shadow: 0 1px 6px 0 rgba(26,255,124,0.18);
+	transform: translateY(1px) scale(0.97);
+	transition: none;
+}
+
+#result {
+	font-size: 1.3rem;
+	font-weight: 700;
+	margin: 18px 0 10px 0;
+	color: #1aff7c;
+	text-shadow: 0 2px 8px #0f2b1e;
+}
+
+.container p {
+	margin: 6px 0;
+	font-size: 1.05rem;
+	color: #eafef3;
+	text-shadow: 0 1px 6px #0f2b1e;
+}
+
+.mini-row {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+	width: 100%;
+	margin-bottom: 4px;
+}
+
+.mini-btn {
+	display: inline-flex;
+    align-items: center;
+	background: rgba(26, 255, 124, 0.10);
+	border: 1.5px solid #12a853;
+	border-radius: 8px;
+	padding: 2px;
+	gap: 4px;
+}
+
+.mini-icon {
+	width: 50px;
+	object-fit: contain;
+	filter: drop-shadow(0 1px 4px #1aff7c44);
+	
+}
+
+.versus {
+	font-weight: 700;
+	color: #1aff7c;
+	margin: 0 8px;
+	font-size: 1.1rem;
+	letter-spacing: 1px;
+	vertical-align: middle;
+}
+
+.mini-result {
+	margin-top: 8px;
+	font-size: 1.05rem;
+	color: #eafef3;
+	font-weight: 600;
+	text-align: center;
+}
+
+/* Pontuação lado a lado */
+.score-row {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+	gap: 32px;
+	margin: 18px 0 10px 0;
+}
+
+.score-block {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	min-width: 60px;
+}
+
+.score-title {
+	font-size: 1rem;
+	color: #a6b8ad;
+	font-weight: 600;
+	margin-bottom: 2px;
+	letter-spacing: 1px;
+}
+
+.score-value {
+	font-size: 1.7rem;
+	color: #1aff7c;
+	font-weight: 700;
+	text-shadow: 0 2px 8px #0f2b1e;
+}
+
+.score-vs {
+	font-size: 1.2rem;
+	color: #1aff7c;
+	font-weight: 700;
+	margin: 0 10px;
+	letter-spacing: 2px;
+}
