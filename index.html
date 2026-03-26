@@ -22,6 +22,10 @@
             </button>
         </div>
         <p id="result"></p>
+                <div class="round-row">
+                    <span class="round-label">Round:</span>
+                    <span class="round-value" id="roundCounter">1</span>
+                </div>
         <div class="score-row">
             <div class="score-block">
                 <div class="score-title">Você</div>
@@ -33,6 +37,7 @@
                 <div class="score-value" id="computerScore">0</div>
             </div>
         </div>
+        <button id="resetScoreBtn" class="btn-reset" onclick="resetScores()">Resetar Pontuação</button>
     </main>
 </body>
 <script src="script.js"></script>

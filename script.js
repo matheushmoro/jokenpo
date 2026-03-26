@@ -2,6 +2,8 @@
 let playerScore = 0;
 let computerScore = 0;
 
+let roundCounter = 1;
+
 function play(userChoice) {
     const choices = ['rock', 'paper', 'scissors'];
     const computerChoice = choices[Math.floor(Math.random() * choices.length)];
@@ -43,4 +45,16 @@ function play(userChoice) {
     document.getElementById('result').innerHTML = resultHTML;
     document.getElementById('playerScore').textContent = playerScore;
     document.getElementById('computerScore').textContent = computerScore;
+    document.getElementById('roundCounter').textContent = roundCounter;
+    roundCounter++;
+}
+
+function resetScores() {
+    playerScore = 0;
+    computerScore = 0;
+    roundCounter = 1;
+    document.getElementById('playerScore').textContent = playerScore;
+    document.getElementById('computerScore').textContent = computerScore;
+    document.getElementById('roundCounter').textContent = roundCounter;
+    document.getElementById('result').innerHTML = '';
 }
